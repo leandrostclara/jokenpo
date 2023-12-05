@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://source.unsplash.com/1600x900/?landscape) center center no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    background-color: #fff;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container h1 {
+    margin: 50px 0;
+    font-size: 50px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.buttons button {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin: 50px 0;
+}
+
+.buttons button:hover {
+    opacity: 70%;
+}
+
+.buttons img {
+    width: 100px;
+}
+
+.rock {
+    background-color: rgb(22, 199, 116)
+}
+
+.paper {
+    background-color: rgb(224, 115, 65);
+}
+
+.scissors {
+    background-color: rgb(74, 134, 223);
+}
+
+.result {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0%;
+}
+
+.placar {
+    background-color: rgb(223, 211, 49);
+    border-bottom: solid 2px #000;
+    border-top: solid 2px #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.my-score {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.my-score span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.cpu-score {
+    font-size: 30px;
+}
+
+.cpu-score span {
+    font-weight: 700;
+    text-decoration: underline;
+}
