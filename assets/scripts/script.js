@@ -33,7 +33,8 @@ setTimeout(2000)
 
     if (nomePlayer == "" || nomePlayer == null) {
      
-        nomePlayerPlacar.innerHTML = "Player"
+        nomePlayer = "Player"
+        nomePlayerPlacar.innerHTML = nomePlayer
 
      } else {
 
@@ -105,8 +106,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Rodada Empatada"
         victory = "draw"
-        rockPlayerChoose.innerHTML = nomePlayer
         rockPlayerChoose.style.opacity = ("100%")
+        rockPlayerChoose.innerHTML = nomePlayer
         rockCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "paper" && cpuChoose == "paper") {
@@ -114,8 +115,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Rodada Empatada"
         victory = "draw"
-        paperPlayerChoose.innerHTML = nomePlayer
         paperPlayerChoose.style.opacity = ("100%")
+        paperPlayerChoose.innerHTML = nomePlayer
         paperCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "scissors" && cpuChoose == "scissors") {
@@ -123,8 +124,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Rodada Empatada"
         victory = "draw"
-        scissorsPlayerChoose.innerHTML = nomePlayer
         scissorsPlayerChoose.style.opacity = ("100%")
+        scissorsPlayerChoose.innerHTML = nomePlayer
         scissorsCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "rock" && cpuChoose == "paper") {
@@ -132,8 +133,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Perdeu !"
         victory = "cpu"
-        rockPlayerChoose.innerHTML = nomePlayer
         rockPlayerChoose.style.opacity = ("100%")
+        rockPlayerChoose.innerHTML = nomePlayer
         paperCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "rock" && cpuChoose == "scissors") {
@@ -141,8 +142,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Ganhou !"
         victory = "player"
-        rockPlayerChoose.innerHTML = nomePlayer
         rockPlayerChoose.style.opacity = ("100%")
+        rockPlayerChoose.innerHTML = nomePlayer
         scissorsCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "paper" && cpuChoose == "rock") {
@@ -150,8 +151,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Ganhou !"
         victory = "player"
-        paperPlayerChoose.innerHTML = nomePlayer
         paperPlayerChoose.style.opacity = ("100%")
+        paperPlayerChoose.innerHTML = nomePlayer
         rockCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "paper" && cpuChoose == "scissors") {
@@ -159,8 +160,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Perdeu !"
         victory = "cpu"
-        paperPlayerChoose.innerHTML = nomePlayer
         paperPlayerChoose.style.opacity = ("100%")
+        paperPlayerChoose.innerHTML = nomePlayer
         scissorsCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "scissors" && cpuChoose == "rock") {
@@ -168,8 +169,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Perdeu !"
         victory = "cpu"
-        scissorsPlayerChoose.innerHTML = nomePlayer
         scissorsPlayerChoose.style.opacity = ("100%")
+        scissorsPlayerChoose.innerHTML = nomePlayer
         rockCpuChoose.style.opacity = ("100%")
 
     } else if (playerChoose == "scissors" && cpuChoose == "paper") {
@@ -177,8 +178,8 @@ function verifyRound() {
         result.style.opacity = ("100%")
         result.innerHTML = "Você Ganhou !"
         victory = "player"
-        scissorsPlayerChoose.innerHTML = nomePlayer
         scissorsPlayerChoose.style.opacity = ("100%")
+        scissorsPlayerChoose.innerHTML = nomePlayer
         paperCpuChoose.style.opacity = ("100%")
 
     }
@@ -227,6 +228,8 @@ function resetGame() {
     playerScoreText.innerHTML = playerScore
     cpuScore = 0
     cpuScoreText.innerHTML = cpuScore
+
+    result.innerHTML = ""
 
 }
 
