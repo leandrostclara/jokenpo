@@ -10,6 +10,7 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(https://source.unsplash.com/1600x900/?landscape) center center no-repeat;
@@ -35,10 +36,12 @@ body {
 
 .player-chooses {
     margin-top: 30px;
+    margin-bottom: 5px;
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    font-weight: 700;
 }
 
 .cpu-chooses {
@@ -47,6 +50,7 @@ body {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    font-weight: 700;
 }
 
 .buttons {
@@ -111,12 +115,12 @@ body {
     margin: 40px 0;
 }
 
-.my-score {
+.player-score {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.my-score span {
+.player-score span {
     font-weight: 700;
     text-decoration: underline;
 }
@@ -142,4 +146,29 @@ body {
 .paper-cpu-choose,
 .scissors-cpu-choose {
     opacity: 0%;
+}
+
+.reset-game {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: rgb(102,27,27);
+    background: radial-gradient(circle, rgba(102,27,27,1) 0%, rgba(167,24,24,1) 100%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px #000;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.reset-game:hover {
+    filter: brightness(1.2);
+}
+
+.reset-game:active {
+    filter: brightness(0.9);
 }
