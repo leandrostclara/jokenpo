@@ -23,14 +23,30 @@ body {
     height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px #000;
 }
 
 .container h1 {
-    margin: 50px 0;
+    margin: 50px 0 10px 0;
     font-size: 50px;
+}
+
+.player-chooses {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cpu-chooses {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .buttons {
@@ -48,11 +64,15 @@ body {
     border: none;
     cursor: pointer;
     transition: .2s ease-in-out;
-    margin: 50px 0;
+    box-shadow: 1px 1px 5px #000;
 }
 
 .buttons button:hover {
     opacity: 70%;
+}
+
+.buttons button:active {
+    opacity: 40%;
 }
 
 .buttons img {
@@ -75,6 +95,7 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 50px;
     opacity: 0%;
 }
 
@@ -87,7 +108,7 @@ body {
     width: 100%;
     font-size: 30px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .my-score {
@@ -107,4 +128,18 @@ body {
 .cpu-score span {
     font-weight: 700;
     text-decoration: underline;
+}
+
+.player-name {
+    text-decoration: none !important;
+    font-weight: 400 !important;
+}
+
+.rock-player-choose,
+.paper-player-choose,
+.scissors-player-choose,
+.rock-cpu-choose,
+.paper-cpu-choose,
+.scissors-cpu-choose {
+    opacity: 0%;
 }

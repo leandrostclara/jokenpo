@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JokenPô</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/scripts/script.js" defer></script>
 
 </head>
 
@@ -16,8 +15,14 @@
 
         <h1>JokenPo</h1>
 
-        <div class="buttons">
+        <div class="player-chooses">
+            <p class="rock-player-choose">Player</p>
+            <p class="paper-player-choose">Player</p>
+            <p class="scissors-player-choose">Player</p>
+        </div>
 
+        <div class="buttons">
+            
             <button class="rock">
                 <img src="./assets/images/Rock.png" alt="rock">
             </button>
@@ -32,14 +37,22 @@
 
         </div>
 
-        <p class="result">Voce ganhou</p>
+        <div class="cpu-chooses">
+            <p class="rock-cpu-choose">CPU</p>
+            <p class="paper-cpu-choose">CPU</p>
+            <p class="scissors-cpu-choose">CPU</p>
+        </div>
+
+        <p class="result"></p>
 
         <p class="placar">PLACAR</p>
-        <p class="my-score"> Player : <span> 0 </span> </p>
+        <p class="my-score"> <span class="player-name"> Player </span> : <span> 0 </span> </p>
         <p class="cpu-score"> CPU : <span> 0 </span> </p>
 
     </div>
 
 </body>
+
+<script src="./assets/scripts/script.js"></script>
 
 </html>
